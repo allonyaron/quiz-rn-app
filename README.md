@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 ## Available Scripts
 
-In the project directory, you can run:
+After cloning this repo, in the project directory, you can run:
 
 ### `npm install`
 
