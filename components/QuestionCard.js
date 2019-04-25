@@ -2,10 +2,6 @@ import React, {Fragment} from 'react';
 import {StyleSheet, Text, View, TouchableHighlight, Button} from 'react-native';
 import HTMLView from 'react-native-htmlview';
 
-const HTMLstyles = StyleSheet.create({
-  styledText: {color: 'red'},
-});
-
 const QuestionCard = props => {
   return (
     <View style={styles.cardContainer}>
@@ -15,10 +11,7 @@ const QuestionCard = props => {
       </View>
       <View style={styles.questionContainer}>
         <View style={styles.questionText}>
-          <HTMLView
-            value={'<styledText>' + props.question + '</styledText>'}
-            stylesheet={HTMLstyles}
-          />
+          <HTMLView value={props.question} />
         </View>
         <Text style={styles.questionCount}>
           {props.currentQuestionNum} of {props.numOfQuestions}
